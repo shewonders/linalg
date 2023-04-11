@@ -1,0 +1,10 @@
+import numpy as np
+A = [[1,2,0], [0,0,5], [3,-4,2],[1,6,5], [0,1,0]]
+svd=np.linalg.svd(A, full_matrices = True, compute_uv = True) 
+print(svd)
+
+evnorm = np.linalg.norm(A, ord=None, axis=None, keepdims=False)
+print(evnorm)
+
+fro = np.linalg.norm(A, ord=None, axis=None, keepdims=False)
+print(fro)
